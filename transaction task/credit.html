@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Credit Account</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .credit{
+                background-color:bisque;
+                padding:5%;
+            }
+        </style>
+          <script src="script.js"></script>
+    </head>
+<body>
+    <div class="credit">
+    <h1>Credit details</h1>
+    <form action="">
+        <input type="number" name="" id="crdtamt">
+        <input type="submit" name="" id="crdsub">
+    </form>
+    <a href="account.html">checkbox</a>
+   
+    <script>
+        let accbls=5000
+        
+        document.getElementById('crdsub').addEventListener('click',function(){
+            let crdval=document.getElementById('crdtamt').value;
+            
+        let a=parseInt( crdval)
+            const crdres= accbls + a
+            alert(crdres)
+         
+            localStorage.setItem('currentbls',crdres)
+           
+        })
+        
+    </script>
+    </div>
+</body>
+</html>

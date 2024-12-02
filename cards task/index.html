@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title>Phones</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+      <style>
+           *{
+                margin: 0;
+                padding: 0;
+            }
+         body{
+               margin: 0;
+               padding: 0;
+            }
+            #header{
+               text-align: center;
+                background-color:black;
+                color:white;
+                padding:2px;
+            }   
+          .abc{
+            text-align: center;
+          }
+             
+            .cart-btn{
+              background-color:black;
+              padding:2px;
+              text-align: end;
+            }   
+            .btn{
+              background-color: aqua;
+              color: black;
+            }   
+            .card:hover{
+              transform: translateY(20px);
+            } 
+        </style>
+        </head>
+         <body>
+              <div id="header">
+             <h1>Mobile Phones</h1>
+             <div class="cart-btn ">
+              <a href="cart.html">
+                  <button id="cartButton" class="btn ">Cart (<span id="cartCount">0</span>)</button>
+              </a>
+              <div class="abc">
+                <form action="" >
+                  <input type="number" id="min" placeholder="enter min value" />
+                  <input type="number" id="max" placeholder="enter max value" />
+                  <input type="button" value="filter" name="" class="filter">
+              </form>
+            </div>
+          </div>
+            </div>
+           
+           
+        <div class="account bg-info-subtle p-5 flex-wrap d-flex gap-5 justify-content-center ">
+            <div class="card" style="width: 18rem" data-value="15600">
+                <div class="card-body bg-black text-light">
+                  <img src="https://img.freepik.com/free-photo/new-cell-phone-white-background_58702-5167.jpg?t=st=1732599174~exp=1732602774~hmac=234872c26e3bac8a3733b35f96a843d25f365c37c80c0ac069b0833516b76d82&w=740" width="250"><br>
+                  <p class="card-text">Brand:Redmi</p>
+                  <p class="card-text">Operating system:MIUI 14, Android 13.0</p>
+                  <p class="card-text">Ram:4 GB</p>
+                  <p class="card-text">Price:15,600</p>
+                  <p class="card-text">Cpu model:Snapdragon</p>                 
+                  <button class="add-to-cart btn " data-name="Redmi" data-price="15600" data-image="https://img.freepik.com/free-photo/new-cell-phone-white-background_58702-5167.jpg?t=st=1732599174~exp=1732602774~hmac=234872c26e3bac8a3733b35f96a843d25f365c37c80c0ac069b0833516b76d82&w=740" width="250">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem" data-value="200000">
+                <div class="card-body bg-black text-light">
+                  <img src="https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437101.jpg?t=st=1732599694~exp=1732603294~hmac=0775a2afaa3f8353259a88a7bda8ad30e1f3486be7af47e36eb7d30a802d62d9&w=740" width="250"><br>
+                  <p class="card-text">Brand:Apple</p>
+                  <p class="card-text">Operating system:iOS 14</p>
+                  <p class="card-text">Screen size:6.1 Inches</p>
+                  <p class="card-text">Cpu speed:3.23 GHz</p>
+                  <p class="card-text">price:200000</p>                 
+                  <button class="add-to-cart btn" data-name="Apple" data-price="200000" data-image="https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437101.jpg?t=st=1732599694~exp=1732603294~hmac=0775a2afaa3f8353259a88a7bda8ad30e1f3486be7af47e36eb7d30a802d62d9&w=740" width="250">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" data-value="17500">
+                <div class="card-body bg-black text-light">
+                  <img src="https://img.freepik.com/free-vector/triple-camera-black-smartphone-concept-mockup_1017-19784.jpg?t=st=1732600122~exp=1732603722~hmac=6aa47ec850a5f545232287cc71979b9cdc447748ae769b0928c90db82b870ac5&w=740" width="250"><br>
+                  <p class="card-text">Brand:Samsung</p>
+                  <p class="card-text">Operating system:Android 14</p>
+                  <p class="card-text">Ram:4 GB</p>
+                  <p class="card-text">Cpu model:MediaTek Helio</p> 
+                  <p class="card-text">price:17500</p>                
+                  <button class="add-to-cart btn " data-name="Samsung" data-price="17500" data-image="https://img.freepik.com/free-vector/triple-camera-black-smartphone-concept-mockup_1017-19784.jpg?t=st=1732600122~exp=1732603722~hmac=6aa47ec850a5f545232287cc71979b9cdc447748ae769b0928c90db82b870ac5&w=740" width="250">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" data-value="43000">
+                <div class="card-body bg-black text-light">
+                  <img src="https://images.unsplash.com/photo-1527747367590-09565c700ddd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="250"><br>
+                  <p class="card-text">Brand:OnePlus</p>
+                  <p class="card-text">Operating system:OxygenOS</p>
+                  <p class="card-text">Ram:4 GB</p>
+                  <p class="card-text">price:43000</p>
+                  <p class="card-text">Cpu model:Snapdragon</p>                 
+                  <button class="add-to-cart btn  " data-name="OnePlus" data-price="43000" data-image="https://images.unsplash.com/photo-1527747367590-09565c700ddd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="250">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" data-value="17000">
+                <div class="card-body bg-black text-light">
+                  <img src="https://images.unsplash.com/photo-1713470599405-3ca0ae1363f8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="250"><br>
+                  <p class="card-text">Brand:	Vivo</p>
+                  <p class="card-text">Operating system:</p>
+                  <p class="card-text">Ram:4 GB</p>
+                  <p class="card-text">price:17000</p>
+                  <p class="card-text">Cpu model:Snapdragon</p>                 
+                  <button class="add-to-cart btn  " data-name="Vivo" data-price="17000" data-image="https://images.unsplash.com/photo-1713470599405-3ca0ae1363f8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="250">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" data-value="30000">
+                <div class="card-body bg-black text-light">
+                  <img src="https://img.freepik.com/free-vector/realistic-phones-different-views_52683-28436.jpg?t=st=1732602324~exp=1732605924~hmac=096f224ea145baaab1ca5adbab48b4fdf28e66355afc92eaddc8a9524298a110&w=740" width="250"><br>
+                  <p class="card-text">Brand:realme</p>
+                  <p class="card-text">Operating system:	Android 14</p>
+                  <p class="card-text">Ram:4 GB</p>
+                  <p class="card-text">price:30000</p>
+                  <p class="card-text">Cpu model:Snapdragon</p>                 
+                  <button class="add-to-cart btn " data-name="realme" data-price="30000" data-image="https://img.freepik.com/free-vector/realistic-phones-different-views_52683-28436.jpg?t=st=1732602324~exp=1732605924~hmac=096f224ea145baaab1ca5adbab48b4fdf28e66355afc92eaddc8a9524298a110&w=740" width="250">Add to Cart</button>
+
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" data-value="2000">
+                <div class="card-body bg-black text-light">
+                  <img src="https://img.freepik.com/free-photo/wireless-earbuds-with-neon-cyberpunk-style-lighting_23-2151074264.jpg?t=st=1732684915~exp=1732688515~hmac=2432f629c94daacfc63063320d6fd27e8b6e4c7ff079b6cc6a08d5379e135a68&w=740" width="250"><br>
+                  <p class="card-text">Brand:	boAt</p>
+                  <p class="card-text">Connector Type:USB</p>
+                  <p class="card-text">Colour:Emerald Green</p>
+                  <p class="card-text">price:2000</p>
+                  <p class="card-text">Battery Capacity:20000 Milliamp Hours</p>                 
+                  <button class="add-to-cart btn " data-name="boAt" data-price="2000" data-image="https://img.freepik.com/free-photo/wireless-earbuds-with-neon-cyberpunk-style-lighting_23-2151074264.jpg?t=st=1732684915~exp=1732688515~hmac=2432f629c94daacfc63063320d6fd27e8b6e4c7ff079b6cc6a08d5379e135a68&w=740" width="250">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" data-value="20000">
+                <div class="card-body bg-black text-light">
+                  <img src="https://img.freepik.com/free-photo/finger-touching-smartwatch-s-screen_1134-388.jpg?t=st=1732685384~exp=1732688984~hmac=a1cdd8cbc60d51a982d9fcceacd53fe6a7f581d31b5ac04c5e77d5a82c9f72b5&w=740" width="250"><br>
+                  <p class="card-text">Special Feature:music player control</p>
+                  <p class="card-text">Operating system:Smartwatch</p>
+                  <p class="card-text">Ram:2 GB</p>
+                  <p class="card-text">price:20000</p>
+                  <p class="card-text">Battery Cell Composition:Lithium Polymer</p>  
+                  <button class="add-to-cart btn  " data-name="music player control" data-price="20000" data-image="https://img.freepik.com/free-photo/finger-touching-smartwatch-s-screen_1134-388.jpg?t=st=1732685384~exp=1732688984~hmac=a1cdd8cbc60d51a982d9fcceacd53fe6a7f581d31b5ac04c5e77d5a82c9f72b5&w=740" width="250">Add to Cart</button>
+               
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" data-value="3000">
+                <div class="card-body bg-black text-light">
+                  <img src="https://cdn.pixabay.com/photo/2017/08/10/03/49/nokia-2617880_1280.jpg" width="250"><br>
+                  <p class="card-text">Brand:Nokia</p>
+                  <p class="card-text">Operating system:S30+</p>
+                  <p class="card-text">Ram:3 GB</p>
+                  <p class="card-text">price:3000</p>
+                  <p class="card-text">Screen Size:2 Inches</p>                 
+                  <button class="add-to-cart btn  " data-name="Nokia" data-price="3000" data-image="https://cdn.pixabay.com/photo/2017/08/10/03/49/nokia-2617880_1280.jpg" width="250">Add to Cart</button>
+                </div>
+              </div>
+              </div> 
+
+              <script>
+                document.querySelectorAll('.card').forEach(function (ele) {
+                    document.querySelector('.filter').addEventListener('click', function () {
+                        let minVal = parseInt(document.getElementById('min').value);
+                        let maxVal = parseInt(document.getElementById('max').value);
+                        let dataItems = ele.getAttribute('data-value');
+                        if(dataItems >= minVal && dataItems <= maxVal){
+                            ele.style.display="block"
+                        }
+                        else{
+                            ele.style.display="none"
+                        }
+                        
+                    })
+                })
+              
+      
+     
+        function addToCart(event) {
+            const product = {
+                name: event.target.getAttribute('data-name'),
+                price: event.target.getAttribute('data-price'),
+                image: event.target.getAttribute('data-image'),
+             
+            };
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            document.getElementById('cartCount').textContent = cart.length;
+        }
+
+  
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', addToCart);
+        });
+        window.onload = function() {
+            updateCartCount();
+        };
+    </script>
+
+           
+</body>
+</html>

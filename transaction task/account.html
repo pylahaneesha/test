@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Account details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+  <style>
+       *{
+            margin: 0;
+            padding: 0;
+        }
+     body{
+           margin: 0;
+           padding: 0;
+        }
+        #header{
+           text-align: center;
+            background-color: black;
+            color:aliceblue;
+            padding:5px;
+            position:sticky;
+            top:0;
+        }
+        
+        
+    </style>
+    </head>
+     <body>
+          <div id="header">
+         <h1>Account Details</h1>
+        </div>
+        <div class="accounts bg-warning p-5">
+            <p>UserName:Pyla Haneesha</p>
+            <p>Phone no:8978455942</p>
+            <p>Account Balance:<span id="usrbls"></span></p>
+            <button onclick="debit()">debit</button>
+            <button onclick="credit()">credit</a></button>
+           
+            <script>
+            document.getElementById('usrbls').innerHTML=localStorage.getItem('currentbls')
+
+
+
+            function credit(){
+            let x=+prompt("enter the pin")
+            const pin=4321
+            const valid = x === pin
+    
+            if(valid){
+            alert("Access Granted");
+            window.location.href="credit.html";
+    }
+           else{
+           alert("please enter valid pin");
+     
+    }
+    }
+
+            function debit(){
+            let x=+prompt("enter the pin")
+            const pin=4321
+            const valid = x === pin
+        
+           if(valid){
+            alert("Access Granted");
+            window.location.href="debit.html";
+        }
+           else{
+            alert("please enter valid pin");
+         
+        }
+        }
+
+
+
+
+
+
+
+
+            </script>          
+        </div>
+
+</body>
+</html>

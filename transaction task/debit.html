@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Debit Account</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .debit{
+                background-color:bisque;
+                padding:5%;
+            }
+            
+        </style>
+          <script src="script.js"></script>
+    </head>
+<body>
+    <div class="debit">
+    <h1>Debit details</h1>
+    <form action="">
+        <input type="number" name="" id="dbtamt">
+        <input type="submit" name="" id="dbtsub">
+    </form>
+    <a href="account.html">checkbox</a>
+   
+    <script>
+        let accbls=localStorage.getItem('currentbls')
+        document.getElementById('dbtsub').addEventListener('click',function(){
+            let dbtval=document.getElementById('dbtamt').value;
+            const dbtres=accbls-dbtval
+            alert(dbtres)
+            localStorage.setItem('currentbls',dbtres)
+        })
+    </script>
+    </div>
+</body>
+</html>
+    

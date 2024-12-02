@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Marks</title>
+    </head>
+    <body>
+        <input type="number" id="tel" placeholder="Enter Telugu Marks">
+        <input type="number" id="Hin" placeholder="Enter Hindi Marks">
+        <input type="number" id="eng" placeholder="Enter English Marks">
+        <input type="number" id="math" placeholder="Enter Maths Marks">
+        <input type="number" id="sci" placeholder="Enter Science Marks">
+        <input type="number" id="soc" placeholder="Enter Social Marks">
+        <button onclick="result()">get result</button>
+        <p id="show">Total Marks</p>
+        <p id="pass">Result</p>
+        <script>
+            function result(){
+                let tel = document.getElementById('tel').value;
+                let Hin= document.getElementById('Hin').value;
+                let eng = document.getElementById('eng').value;
+                let math = document.getElementById('math').value;
+                let sci = document.getElementById('sci').value;
+                let soc = document.getElementById('soc').value;
+            
+            let telmark=parseInt(tel);
+            let Hinmark=parseInt(Hin);
+            let engmark=parseInt(eng);
+            let mathmark=parseInt(math);
+            let scimark=parseInt(sci);
+            let socmark=parseInt(soc);
+
+
+            let telmarks=telmark>=35 &&telmark<=100;
+            let Hinmarks=Hinmark>=35 &&Hinmark<=100;
+            let engmarks=engmark>=35 &&engmark<=100;
+            let mathmarks=mathmark>=35 &&mathmark<=100;
+            let scimarks=scimark>=35 &&scimark<=100;
+            let socmarks=socmark>=35 &&socmark<=100;
+           const result=telmarks && Hinmarks && engmarks && mathmarks && scimarks && socmarks
+           const marks=telmark+Hinmark+engmark+mathmark+scimark+socmark
+            
+           document.getElementById('show').innerHTML="Total marks are:" + marks
+           document.getElementById('pass').innerHTML="your Result is:" + result
+}
+
+
+        </script>
+        </body>
+</html>
