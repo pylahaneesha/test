@@ -1,0 +1,54 @@
+<Html>
+    <style>
+        h2{
+            color:blue;
+        }
+        #result{
+            color:green;
+            font-size: 50px;
+        }
+        #header{
+background-color: aqua;
+padding:50px;
+border: 5px solid black; 
+border-radius: 5px;
+box-shadow: 5px 5px 5px 5px rgb(44, 40, 40);
+
+
+
+        }
+        #header h1{
+            text-align: center;
+        }
+        
+    </style>
+<head>
+<title>Fuctions</title>
+</head>
+<body>
+    <script>
+function compare(){
+    if(document.getElementById("t1").value ==document.getElementById("t2").value)
+    {
+        document.getElementById("result").innerHTML="both are equal"
+        }
+            else if(document.getElementById("t1").value>=document.getElementById("t2").value){
+                document.getElementById("result").innerHTML="first is greater";    
+            }
+            else{
+                document.getElementById("result").innerHTML="first is smaller";   
+            }
+        }
+    </script>
+    <div id="header">
+        <h1>Comparing two numbers</h1>
+    <h2>enter the first number:<input type="text" id="t1"></h2>
+    <h2>enter the second number:<input type="text" id="t2"></h2>
+    <button type="button" onclick="compare()">verify</button>
+    <div id="result"></div>
+    </div>
+    
+   
+</body>
+</Html>
+
